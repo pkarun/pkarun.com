@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P K Arun Internet Marketer Newsletter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #1e293b;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .author-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: auto;
+            border: 4px solid #f1f5f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .intro-text {
+            margin-bottom: 2.5rem;
+        }
+
+        .intro-text h1 {
+            font-size: 1.8rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+
+        .intro-text p {
+            color: #64748b;
+            font-size: 1.1rem;
+            max-width: 80%;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .optin-form {
+            max-width: 400px;
+            margin: 2rem auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            placeholder: #94a3b8;
+        }
+
+        input[type="email"]::placeholder {
+            color: #94a3b8;
+        }
+
+        input[type="email"]:focus {
+            border-color: #2563eb;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .checkbox-group {
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .checkbox-label {
+            color: #475569;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 3px;
+            accent-color: #2563eb;
+        }
+
+        #submit {
+            background: #2563eb;
+            color: white;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        #submit:hover {
+            background: #1d4ed8;
+        }
+
+        .disclaimer {
+            color: #64748b;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .intro-text p {
+                max-width: 100%;
+                font-size: 1rem;
+            }
+
+            .author-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.groovetech.io/GiBeaFErV4dwpva2ScuCasCX0jQkvzqC38-2gg3DEi4/rs:fit:0:0:0/g:no:0:0/c:0:0/aHR0cHM6Ly9pbWFnZXMuZ3Jvb3ZldGVjaC5pby85dV9BTzgzLTB1b1R0dHBWMTZVUGZEUGRlRGFkc1c5c2h3VXFoNV8xX2wwL3JzOmZpdDowOjA6MC9nOm5vOjA6MC9jOjA6MC9hSFIwY0hNNkx5OWhjM05sZEhNdVozSnZiM1psWVhCd2N5NWpiMjB2YVcxaFoyVnpMelZtTURNeU1UYzBNR1k1WWpkaU1EQXhNemcwWkRabFlpOHhOekkzTnpRMU9UY3hYM0JyWVhKMWJpNXFjR2Mud2VicA.webp" 
+             class="author-image" 
+             alt="P K Arun">
+        
+        <div class="intro-text">
+            <h1>Hi! I'm P K Arun</h1>
+            <p>Turn your knowledge into wealth online. If you're passionate about online business, come join me on this exciting journey.
+</p>
+        </div>
+
+        <form class="optin-form" action="https://emails.pkarun.com/subscribe" method="POST" accept-charset="utf-8">
+            <div class="form-group">
+                <input type="email" 
+                       name="email" 
+                       id="email" 
+                       placeholder="Enter your Email Here"
+                       required>
+            </div>
+<!--
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    By signing up above, I agree to receive emails from P K Arun and understand that I can click the unsubscribe link in any email to stop receiving them.
+                </label>
+            </div>
+-->
+            <div style="display:none;">
+                <label for="hp">HP</label>
+                <input type="text" name="hp" id="hp"/>
+            </div>
+
+            <input type="hidden" name="list" value="C0el3GVfNAbizZRhjJIoWQ"/>
+            <input type="hidden" name="subform" value="yes"/>
+
+            <button type="submit" id="submit">Join Now</button>
+            
+            <p class="disclaimer">I will not spam. Unsubscribe anytime.</p>
+        </form>
+    </div>
+</body>
+</html>
