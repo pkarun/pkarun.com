@@ -142,6 +142,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         padding-bottom: 10px;
       }
     }
+
+    /* Styling for the checkbox container */
+    .checkbox-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: #333;
+      margin-top: 12px;
+      justify-content: flex-start; /* Ensures everything is aligned to the left */
+    }
+
+    .checkbox-container input[type="checkbox"] {
+      margin: 0;
+      transform: scale(1.2); /* Optionally increase the checkbox size */
+    }
+
+    .checkbox-container label {
+      display: inline-block;
+      line-height: 1.5;
+      cursor: pointer;
+      max-width: 100%; /* Ensures the text doesn't overflow */
+      word-wrap: break-word;
+      text-align: left;
+    }
   </style>
 </head>
 <body>
@@ -161,7 +186,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Opt-in Form -->
     <form class="form" action="https://emails.pkarun.com/subscribe" method="POST" accept-charset="utf-8">
       <input type="email" name="email" id="email" placeholder="Enter your email" required>
-
+ 
+      <div class="checkbox-container">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">By signing up above, I agree to receive daily emails from P K Arun and understand that I can click the unsubscribe link in any email to stop receiving them.</label>
+      </div>  
+      
       <div style="display:none;">
         <label for="hp">HP</label>
         <input type="text" name="hp" id="hp"/>
@@ -172,14 +202,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
       <input type="submit" name="submit" id="submit" value="Subscribe Now">
       
-      <p class="unsubscribe">Unsubscribe anytime.</p>
-    </form>
-  </div>
-
-  <!-- Footer at Bottom of Page -->
-  <div class="footer">
-    <a href="privacy-policy.html">Privacy </a> | 
-    <a href="contact-us.html">Contact Me</a>
-  </div>
-</body>
-</html>
