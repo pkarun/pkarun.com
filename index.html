@@ -1,188 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P K Arun Internet Marketer Newsletter</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
 
-        body {
-            background: #ffffff;
-            color: #1e293b;
-            line-height: 1.6;
-            min-height: 100vh;
-            padding: 2rem;
-        }
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WDD2R8');</script>
+<!-- End Google Tag Manager -->
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P K Arun, Internet Marketer Newsletter</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+      padding: 16px;
+    }
 
-        .author-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: auto;
-            border: 4px solid #f1f5f9;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        }
+    .container {
+      max-width: 800px;
+      width: 100%;
+      flex: 1;
+    }
 
-        .intro-text {
-            margin-bottom: 2.5rem;
-        }
+    .title {
+      font-size: 36px;
+      margin-bottom: 24px;
+    }
 
-        .intro-text h1 {
-            font-size: 1.8rem;
-            color: #0f172a;
-            margin-bottom: 1rem;
-        }
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-        .intro-text p {
-            color: #64748b;
-            font-size: 1.1rem;
-            max-width: 80%;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
+    .form input[type="email"] {
+      padding: 16px;
+      font-size: 18px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
 
-        .optin-form {
-            max-width: 400px;
-            margin: 2rem auto;
-        }
+    .form input[type="submit"] {
+      padding: 16px;
+      font-size: 20px;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
+    .form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
 
-        input[type="email"] {
-            width: 100%;
-            padding: 14px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-            placeholder: #94a3b8;
-        }
+    .unsubscribe {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
 
-        input[type="email"]::placeholder {
-            color: #94a3b8;
-        }
+    .author {
+      margin-top: 32px;
+    }
 
-        input[type="email"]:focus {
-            border-color: #2563eb;
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
+    .author img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 8px;
+    }
 
-        .checkbox-group {
-            margin: 1.5rem 0;
-            text-align: left;
-        }
+    .author p {
+      font-size: 18px;
+      margin: 0;
+    }
 
-        .checkbox-label {
-            color: #475569;
-            font-size: 0.85rem;
-            line-height: 1.4;
-            display: flex;
-            gap: 12px;
-            align-items: flex-start;
-        }
+    /* Footer Styling */
+    .footer {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      margin-top: auto;
+      padding: 20px 0;
+      position: absolute;
+      bottom: 10px;
+    }
 
-        input[type="checkbox"] {
-            margin-top: 3px;
-            accent-color: #2563eb;
-        }
+    .footer a {
+      color: #888;
+      text-decoration: none;
+      margin: 0 10px;
+    }
 
-        #submit {
-            background: #2563eb;
-            color: white;
-            padding: 16px 32px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            width: 100%;
-            transition: background 0.3s ease;
-        }
+    .footer a:hover {
+      text-decoration: underline;
+    }
 
-        #submit:hover {
-            background: #1d4ed8;
-        }
+    /* Mobile Optimization */
+    @media (max-width: 480px) {
+      .title {
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
 
-        .disclaimer {
-            color: #64748b;
-            font-size: 0.8rem;
-            margin-top: 1rem;
-            line-height: 1.4;
-        }
+      .form input[type="email"], 
+      .form input[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+      }
 
-        @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
+      .author img {
+        width: 120px;
+        height: 120px;
+      }
 
-            .intro-text p {
-                max-width: 100%;
-                font-size: 1rem;
-            }
-
-            .author-image {
-                width: 120px;
-                height: 120px;
-            }
-        }
-    </style>
+      .footer {
+        font-size: 12px;
+        position: static; /* Ensures it stays visible on small screens */
+        padding-bottom: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://images.groovetech.io/GiBeaFErV4dwpva2ScuCasCX0jQkvzqC38-2gg3DEi4/rs:fit:0:0:0/g:no:0:0/c:0:0/aHR0cHM6Ly9pbWFnZXMuZ3Jvb3ZldGVjaC5pby85dV9BTzgzLTB1b1R0dHBWMTZVUGZEUGRlRGFkc1c5c2h3VXFoNV8xX2wwL3JzOmZpdDowOjA6MC9nOm5vOjA6MC9jOjA6MC9hSFIwY0hNNkx5OWhjM05sZEhNdVozSnZiM1psWVhCd2N5NWpiMjB2YVcxaFoyVnpMelZtTURNeU1UYzBNR1k1WWpkaU1EQXhNemcwWkRabFlpOHhOekkzTnpRMU9UY3hYM0JyWVhKMWJpNXFjR2Mud2VicA.webp" 
-             class="author-image" 
-             alt="P K Arun">
-        
-        <div class="intro-text">
-            <h1>Hi! I'm P K Arun</h1>
-            <p>Now building one email a day business online. If you're passionate about online business, join me below.
-</p>
-        </div>
 
-        <form class="optin-form" action="https://emails.pkarun.com/subscribe" method="POST" accept-charset="utf-8">
-            <div class="form-group">
-                <input type="email" 
-                       name="email" 
-                       id="email" 
-                       placeholder="Enter your Email Here"
-                       required>
-            </div>
-<!--
-            <div class="checkbox-group">
-                <label class="checkbox-label">
-                    <input type="checkbox" required>
-                    By signing up above, I agree to receive emails from P K Arun and understand that I can click the unsubscribe link in any email to stop receiving them.
-                </label>
-            </div>
--->
-            <div style="display:none;">
-                <label for="hp">HP</label>
-                <input type="text" name="hp" id="hp"/>
-            </div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WDD2R8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-            <input type="hidden" name="list" value="C0el3GVfNAbizZRhjJIoWQ"/>
-            <input type="hidden" name="subform" value="yes"/>
-
-            <button type="submit" id="submit">Join Now</button>
-            
-            <p class="disclaimer">Unsubscribe anytime.</p>
-        </form>
+  <div class="container">
+    <div class="author">
+      <img src="https://images.groovetech.io/GiBeaFErV4dwpva2ScuCasCX0jQkvzqC38-2gg3DEi4/rs:fit:0:0:0/g:no:0:0/c:0:0/aHR0cHM6Ly9pbWFnZXMuZ3Jvb3ZldGVjaC5pby85dV9BTzgzLTB1b1R0dHBWMTZVUGZEUGRlRGFkc1c5c2h3VXFoNV8xX2wwL3JzOmZpdDowOjA6MC9nOm5vOjA6MC9jOjA6MC9hSFIwY0hNNkx5OWhjM05sZEhNdVozSnZiM1psWVhCd2N5NWpiMjB2YVcxaFoyVnpMelZtTURNeU1UYzBNR1k1WWpkaU1EQXhNemcwWkRabFlpOHhOekkzTnpRMU9UY3hYM0JyWVhKMWJpNXFjR2Mud2VicA.webp" alt="Author">
+      <p>Hi, I'm P K Arun</p>
     </div>
+    <h1 class="title">Now I'm building one email a day business online. If you're passionate about online business, join me below.</h1>
+    
+    <!-- Opt-in Form -->
+    <form class="form" action="https://emails.pkarun.com/subscribe" method="POST" accept-charset="utf-8">
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+      <div style="display:none;">
+        <label for="hp">HP</label>
+        <input type="text" name="hp" id="hp"/>
+      </div>
+      
+      <input type="hidden" name="list" value="C0el3GVfNAbizZRhjJIoWQ"/>
+      <input type="hidden" name="subform" value="yes"/>
+      
+      <input type="submit" name="submit" id="submit" value="Subscribe Now">
+      
+      <p class="unsubscribe">Unsubscribe anytime.</p>
+    </form>
+  </div>
+
+  <!-- Footer at Bottom of Page -->
+  <div class="footer">
+    <a href="privacy-policy.html">Privacy </a> | 
+    <a href="contact-us.html">Contact Me</a>
+  </div>
 </body>
 </html>
