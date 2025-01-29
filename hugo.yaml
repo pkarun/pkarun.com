@@ -1,0 +1,33 @@
+baseURL: https://pkarun.com/
+languageCode: en-us
+title: P K Arun
+theme: PaperMod
+permalinks:
+  posts: /:slug
+
+params:
+  defaultTheme: auto
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: false
+
+  homeInfoParams:
+    Title:   
+    Content: " "
+
+assets:
+  favicon16x16: /assets/favicon-16x16.png
+  favicon32x32: /assets/favicon-32x32.png
+  apple_touch_icon: /assets/apple-touch-icon.png
+  
+favicon: favicon.ico
+
+
+
+ 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+  
