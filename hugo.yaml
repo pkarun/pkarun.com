@@ -27,7 +27,7 @@ markup:
 params:
   title: P K Arun
   description: P K Arun Internet Marketing Blog
-  favicon: images/favicon.png
+  favicon: images/favicon.ico
   dateFormat: 02-01-2006
   hideMadeWithLine: false
   hideRSSLink: true
