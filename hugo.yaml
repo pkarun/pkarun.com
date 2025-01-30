@@ -25,10 +25,10 @@ markup:
     noClasses: true
     style: catppuccin-mocha
 params:
-  title: Hugo Simple
-  description: Hugo Simple Demo
+  title: P K Arun
+  description: P K Arun Internet Marketing Blog
   favicon: images/favicon.png
-  dateFormat: 2006-01-02
+  dateFormat: 02-01-2006
   hideMadeWithLine: false
   hideRSSLink: true
   author:
@@ -47,7 +47,7 @@ services:
   rss:
     limit: 42
 pagination:
-  pagerSize: 16
+  pagerSize: 30
 outputs:
   section:
     - html
