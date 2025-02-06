@@ -47,3 +47,10 @@ div.highlight pre,
 div.highlight pre span {
   color: inherit;
 }
+
+.blog-posts li {
+  margin-bottom: 10px; /* Adds space between each list item */
+  padding: 5px 0; /* Optional: Adds slight padding for better spacing */
+  list-style: none; /* Optional: Removes default list bullet points */
+}
+
